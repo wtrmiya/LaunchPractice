@@ -13,6 +13,7 @@
 		862EE2152C0D506C00503974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862EE2142C0D506C00503974 /* Assets.xcassets */; };
 		862EE2182C0D506C00503974 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 862EE2172C0D506C00503974 /* Base */; };
 		862EE2212C0D541D00503974 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EE2202C0D541D00503974 /* Logger.swift */; };
+		862EE2232C0D5A8600503974 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EE2222C0D5A8600503974 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		862EE2172C0D506C00503974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		862EE2192C0D506C00503974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862EE2202C0D541D00503974 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		862EE2222C0D5A8600503974 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				862EE20D2C0D506B00503974 /* SceneDelegate.swift */,
 				862EE20F2C0D506B00503974 /* ViewController.swift */,
 				862EE2202C0D541D00503974 /* Logger.swift */,
+				862EE2222C0D5A8600503974 /* NotificationManager.swift */,
 				862EE2142C0D506C00503974 /* Assets.xcassets */,
 				862EE2162C0D506C00503974 /* LaunchScreen.storyboard */,
 				862EE2192C0D506C00503974 /* Info.plist */,
@@ -163,6 +166,7 @@
 			files = (
 				862EE2102C0D506B00503974 /* ViewController.swift in Sources */,
 				862EE20C2C0D506B00503974 /* AppDelegate.swift in Sources */,
+				862EE2232C0D5A8600503974 /* NotificationManager.swift in Sources */,
 				862EE20E2C0D506B00503974 /* SceneDelegate.swift in Sources */,
 				862EE2212C0D541D00503974 /* Logger.swift in Sources */,
 			);
