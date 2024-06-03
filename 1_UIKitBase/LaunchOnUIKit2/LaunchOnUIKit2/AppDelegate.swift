@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        Logger.appDelegate.info("file: \(#file), function: \(#function)")
         return true
     }
 
@@ -23,10 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configurationForConnecting connectingSceneSession: UISceneSession,
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
+        Logger.appDelegate.info("file: \(#file), function: \(#function)")
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        Logger.appDelegate.info("file: \(#file), function: \(#function)")
     }
     
     // MARK: - Responding to app life-cycle events
