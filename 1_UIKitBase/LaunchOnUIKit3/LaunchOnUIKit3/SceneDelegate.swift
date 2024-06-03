@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
+        Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = UIHostingController(rootView: MainView())
