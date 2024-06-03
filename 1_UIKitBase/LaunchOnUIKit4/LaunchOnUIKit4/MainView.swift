@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import OSLog
 
 struct MainView: View {
+    private let logger = Logger(subsystem: Logger.subsystem, category: String(describing: MainView.self))
+    
     @Environment(\.scenePhase) private var scenePhase
     var body: some View {
         Text("MainView")
@@ -15,13 +18,13 @@ struct MainView: View {
             .onChange(of: scenePhase, perform: { phase in
                 switch phase {
                 case .active:
-                    print("active")
+                    logger.info("file: \(#file), active")
                 case .inactive:
-                    print("inactive")
+                    logger.info("file: \(#file), inactive")
                 case .background:
-                    print("background")
+                    logger.info("file: \(#file), background")
                 @unknown default:
-                    print("@unknown")
+                    logger.info("file: \(#file), @unknown")
                 }
             })
     }
