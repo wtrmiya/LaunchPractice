@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainView: View {
-    
     @Environment(\.scenePhase) private var scenePhase
     var body: some View {
         Text("MainView")
