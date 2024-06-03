@@ -19,5 +19,14 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>LaunchOnUIKit3</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>LaunchOnUIKit3</string>
+		</dict>
+	</array>
 </dict>
 </plist>
