@@ -13,4 +13,3 @@ extension Logger {
     static let subsystem = Bundle.main.bundleIdentifier!
     static let appDelegate = Logger(subsystem: subsystem, category: String(describing: AppDelegate.self))
 }
-
