@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import OSLog
 
 struct ContentView: View {
+    private let logger = Logger(subsystem: Logger.subsystem, category: String(describing: ContentView.self))
+    
+    @Environment(\.scenePhase) private var scenePhase
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +20,18 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onChange(of: scenePhase, perform: { phase in
+            switch phase {
+            case .active:
+                logger.info("file: \(#file), active")
+            case .inactive:
+                logger.info("file: \(#file), inactive")
+            case .background:
+                logger.info("file: \(#file), background")
+            @unknown default:
+                logger.info("file: \(#file), @unknown")
+            }
+        })
     }
 }
 
