@@ -14,10 +14,27 @@ struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Spacer()
+            Button(action: {
+                NotificationManager.shared.requestAuthorization()
+            }, label: {
+                Text("Request Auth")
+            })
+            Spacer()
+                .frame(height: 20)
+            Button(action: {
+                NotificationManager.shared.scheduleNotification()
+            }, label: {
+                Text("Schedule Local Push")
+            })
+            Spacer()
+                .frame(height: 20)
+            Button(action: {
+                NotificationManager.shared.cancelNotification()
+            }, label: {
+                Text("Cancel Schedule")
+            })
+            Spacer()
         }
         .padding()
         .onChange(of: scenePhase, perform: { phase in
