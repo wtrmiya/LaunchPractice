@@ -64,4 +64,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, didFailToContinueUserActivityWithType userActivityType: String, error: any Error) {
         Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
     }
+    
+    // MARK: - Saving the state of the scene
+    func stateRestorationActivity(for scene: UIScene) -> NSUserActivity? {
+        Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
+        return nil
+    }
+    
+    func scene(_ scene: UIScene, restoreInteractionStateWith stateRestorationActivity: NSUserActivity) {
+        Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
+    }
+    
+    func scene(_ scene: UIScene, didUpdate userActivity: NSUserActivity) {
+        Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
+    }
+    
+    // MARK: - WindowSceneDelegate Responding to scene changes
+    func windowScene(
+        _ windowScene: UIWindowScene,
+        didUpdate previousCoordinateSpace: any UICoordinateSpace,
+        interfaceOrientation previousInterfaceOrientation: UIInterfaceOrientation,
+        traitCollection previousTraitCollection: UITraitCollection
+    ) {
+        Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
+    }
+    
+    func windowScene(
+        _ windowScene: UIWindowScene,
+        performActionFor shortcutItem: UIApplicationShortcutItem,
+        completionHandler: @escaping (
+            Bool
+        ) -> Void
+    ) {
+        Logger.sceneDelegate.info("file: \(#file), function: \(#function)")
+    }
 }
